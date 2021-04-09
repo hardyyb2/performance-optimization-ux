@@ -7,7 +7,13 @@ const Card = ({ image, title }) => {
   return (
     <div className="Card-root">
       <div className="Image-container">
-        <img src={image} alt={title} className="Card-img" />
+        <img
+          src={image}
+          alt={title}
+          className="Card-img"
+          width={300}
+          height={225}
+        />
       </div>
       <div className="Image-title">{title}</div>
     </div>
@@ -31,6 +37,8 @@ function App() {
           src={BackgroundOriginal}
           alt="wooden background"
           className="Header-img"
+          width={500}
+          height={400}
         />
       </div>
       <div className="Cards">
