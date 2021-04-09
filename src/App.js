@@ -1,10 +1,10 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import "./App.css";
-import BackgroundOriginal from "./assets/images/background-original.jpg";
-import BackgroundSmall from "./assets/images/background-small.jpg";
-import BackgroundMedium from "./assets/images/background-medium.jpg";
-import BackgroundLarge from "./assets/images/background-large.jpg";
+import BackgroundOriginal from "./assets/images/background-original.webp";
+import BackgroundSmall from "./assets/images/background-small.webp";
+import BackgroundMedium from "./assets/images/background-medium.webp";
+import BackgroundLarge from "./assets/images/background-large.webp";
 
 const Card = ({ image, title }) => {
   return (
