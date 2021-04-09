@@ -2,6 +2,9 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import "./App.css";
 import BackgroundOriginal from "./assets/images/background-original.jpg";
+import BackgroundSmall from "./assets/images/background-small.jpg";
+import BackgroundMedium from "./assets/images/background-medium.jpg";
+import BackgroundLarge from "./assets/images/background-large.jpg";
 
 const Card = ({ image, title }) => {
   return (
@@ -39,13 +42,18 @@ function App() {
           className="Header-img"
           width={500}
           height={400}
+          srcSet={`
+            ${BackgroundSmall} 640w,
+            ${BackgroundMedium} 1920w, 
+            ${BackgroundLarge} 2400w
+          `}
         />
       </div>
-      <div className="Cards">
+      {/* <div className="Cards">
         {images?.map(({ download_url, author }, index) => (
           <Card image={download_url} title={author} key={index} />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }
